@@ -63,6 +63,9 @@ background: linear-gradient(180deg, rgba(245,223,212,1) 30%, rgba(254,254,254,1)
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.12rem;
+    width: 17rem;
+    text-align: center;
+    margin: auto;
 }
 
 #help-text {
@@ -82,4 +85,6 @@ background: linear-gradient(180deg, rgba(245,223,212,1) 30%, rgba(254,254,254,1)
 
 #bioCard {
     border: transparent;
+    margin: auto;
+    text-align: center;
 }
