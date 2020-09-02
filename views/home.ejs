@@ -31,7 +31,7 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark p-0">
         <div class="container-fluid" id="navContainer">
             <a class="navbar-brand col-8 col-lg-6 mt-2 text-center text-lg-left" id="navbrand" href="/">COVID-19 Student Resources</a>
             <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -39,23 +39,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse col-lg-6 justify-content-between" id="navbarNav">
-                <div class="navbar-nav col-12 justify-content-between">
-                    <a class="nav-item nav-link" href="/"><span id="navlink">Home</span><span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="/wellness"><span id="navlink">Wellness</span><span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="/education"><span id="navlink">Education</span></a>
-                    <a class="nav-item nav-link" href="/finance"><span id="navlink">Finance</span></a>
-                </div>
+                <ul class="navbar-nav col-12 p-0 justify-content-between">
+                    <li class="nav-item">
+                    <a class="nav-link" href="/"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/wellness"><span>Wellness</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/education"><span>Education</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/finance"><span>Finance</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid px-0 pt-3 p-md-0 bgimg">
-        <img src="/images/homePageMask.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="container-fluid" id="grad-info">
-        <div class="container">
+    <div class="container-fluid pt-5" id="grad-info">
+        <div class="container pt-5">
             <div class="row pt-3 justify-content-center">
                 <div class="col-10 col-md-5 col-lg-4 justify-content-center">
                     <div class="card mxy-0 text-center" id="infoCard">
@@ -86,8 +89,13 @@
                 </div>
             </div>
         </div>
-        <h2 class="display-5 text-center mt-3 pt-2" id="help-text">WE ARE HERE TO HELP!</h2>
-        <div class="row justify-content-center mt-5">
+        <h2 class="display-5 text-center mt-3 pt-2 mb-0" id="help-text">WE ARE HERE TO HELP!</h2>
+    </div>
+        <div class="container-fluid px-0 pt-3 p-md-0 bgimg">
+            <img src="/images/homePageMask.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+    <div class="container-fluid" id="bioContainer">
+        <div class="row justify-content-center pt-5">
             <div class="col-10 col-lg-5">
                 <div class="card text-center mt-3" id="aboutUs">
                     <div class="card-header" id="help-text">
@@ -147,7 +155,9 @@
     $(function () {
         $(document).scroll(function () {
             var nav = $("nav.navbar");
+            var link = $("#navbarNav .nav-link");
             nav.toggleClass("scrolled", $(this).scrollTop() > nav.height());
+            link.toggleClass("scrolled", $(this).scrollTop() > nav.height());
         });
     });
 </script>
