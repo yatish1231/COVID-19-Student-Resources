@@ -1,0 +1,9 @@
+.link-resource {
+    font-size: 2rem;
+    color: rgb(230,94,75);
+    
+}
+
+a.link-resource:hover {
+    color: rgb(59,51,72);
+}

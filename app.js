@@ -13,6 +13,18 @@ app.get("/wellness", function(req, res){
     res.render("wellness");
 });
 
+app.get("/wellness/mindfulness", function(req, res) {
+    res.render("mindfulness");
+})
+
+app.get("/wellness/mental-health", function(req, res) {
+    res.render("mental-health");
+})
+
+app.get("/wellness/minority-resources", function(req, res) {
+    res.render("minority");
+})
+
 app.get("/education", function(req, res){
     res.render("education");
 });
@@ -20,6 +32,7 @@ app.get("/education", function(req, res){
 app.get("/finance", function(req, res){
     res.render("finance");
 });
+
 
 app.listen(port, function(err){
     if(err){

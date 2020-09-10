@@ -1,0 +1,62 @@
+/* Navbar start */
+.navbar {
+    background-color: whitesmoke;
+}
+
+nav.navbar.scrolled {
+    background:rgb(59,51,72) !important;
+    transition: background 500ms;
+}
+
+
+#navbarNav .nav-link {
+    color: rgb(59,51,72);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    height: 100%;
+}
+
+#navbarNav .nav-link.scrolled {
+    color: white;
+}
+
+#navbrand {
+    font-size: 1.8rem;
+    letter-spacing: 0.18rem;
+}
+
+#navbrand, #navbarNav .nav-link:hover {
+    color: rgb(230,94,75);     
+}
+
+
+#navbrand:hover{
+    color: rgb(59,51,72);
+}
+
+.bgimg {
+    background-color: rgb(245,223,212);
+}
+
+button.navbar-toggler {
+    background-color: rgb(59,51,72) ;
+}
+
+
+ @media (min-width: 768px) and (max-width: 991.98px) {
+     #navContainer{
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+ }
+
+ @media (max-width: 768px) { 
+
+    #navbrand {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+  }
+
+/* Navbar end */

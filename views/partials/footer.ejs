@@ -1,3 +1,13 @@
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var nav = $("nav.navbar");
+            var link = $("#navbarNav .nav-link");
+            nav.toggleClass("scrolled", $(this).scrollTop() > nav.height());
+            link.toggleClass("scrolled", $(this).scrollTop() > nav.height());
+        });
+    });
+</script>
 </body>
 
 </html>

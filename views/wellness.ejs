@@ -1,7 +1,27 @@
-<%- include("partials/header") %> 
-    <div class="container" style="text-align: center;">
-        <h1>
-            Welcome to the Wellness section
-        </h1>
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/wellness.css">
+</head>
+
+<body>
+    <%- include("partials/navbar") %>
+    <div class="container-fluid p-0" style="text-align: center;">
+        <div class="row p-0" style="height: 100vh;">
+            <div class="col-4 p-0" style="height: 100%;">
+                <img class="img-fluid" src="/images/wellness_main.jpg" style="height: 100%; object-fit: cover;">
+            </div>
+            <div class="col-8 p-0 pt-5 align-self-center">
+                <h1 class="display-4 p-3">WELLNESS HOME</h1>
+                <div>
+                    <p>
+                        Throughout our wellness page we have provided resources directed to wellness, mental health, and underreprsented groups
+                    </p> 
+                </div>
+                <div class="justify-content-center pt-3">
+                    <div class="m-2"><a class="link-resource" href="wellness/mindfulness">Mindfuless Resources</a></div>
+                    <div class="m-2"><a class="link-resource" href="wellness/mental-health">Mental Health Resources</a></div>
+                    <div class="m-2"><a class="link-resource" href="wellness/minority-resources">Minority Resources</a></div>
+                </div>
+            </div>
+        </div>
     </div>
     <%- include("partials/footer") %>

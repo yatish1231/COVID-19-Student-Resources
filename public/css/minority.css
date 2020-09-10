@@ -1,0 +1,16 @@
+body {
+    background-color: #F9F8F8;
+}
+
+#infoContainer .infoCard {
+    border: none;
+}
+
+#heading-text {
+    background-color: #6B7F82;
+    color: white;
+}
+
+.fact-links {
+    color: rgb(230,94,75);
+}
